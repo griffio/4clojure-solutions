@@ -15,6 +15,6 @@ _Notes_
 
 It is possible to use a (flatten (map )) function to solve half the problem but only if the output requires a flat sequence of values.
 
-~~clojure
+~~~clojure
 (fn [x] (flatten (map #(list % %) x)))
 ~~~
