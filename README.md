@@ -10,3 +10,11 @@ Write a function which duplicates each element of a sequence.
 ~~~clojure
 (fn [x] (interleave x x))
 ~~~
+
+_Notes_
+
+It is possible to use a (flatten (map )) function to solve half the problem but only if the output requires a flat sequence of values.
+
+~~clojure
+(fn [x] (flatten (map #(list % %) x)))
+~~~
