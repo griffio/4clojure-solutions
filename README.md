@@ -5,7 +5,7 @@
 
 Write a function which removes consecutive duplicates from a sequence.
 
-[partition](https://clojuredocs.org/clojure.core/partition)
+[partition docs](https://clojuredocs.org/clojure.core/partition)
 
 ~~~clojure
 #(map first (partition-by identity %))
@@ -27,7 +27,7 @@ _Notes_
 
 Write a function which duplicates each element of a sequence.
 
-[interleave](https://clojuredocs.org/clojure.core/interleave)
+[interleave docs](https://clojuredocs.org/clojure.core/interleave)
 
 ~~~clojure
 (fn [x] (interleave x x))
