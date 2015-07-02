@@ -1,4 +1,4 @@
-# 4clojure-solutions
+# [4clojure-solutions](http://www.4clojure.com/)
 ## some solutions to 4clojure kata
 
 ### [problem 30](https://4clojure.com/problem/30)
