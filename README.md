@@ -43,7 +43,7 @@ It is possible to use a (flatten (map )) function to solve half the problem but 
 
 Write a function which drops every Nth item from a sequence.
 
-[partition docs](https://clojuredocs.org/clojure.core/partition)
+[partition-all docs](https://clojuredocs.org/clojure.core/partition-all)
 
 ~~~clojure
 (fn [coll n] (flatten (partition-all (dec n) n coll)))
