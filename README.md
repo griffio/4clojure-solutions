@@ -5,7 +5,7 @@
 
 Write a function which removes consecutive duplicates from a sequence.
 
-[partition docs](https://clojuredocs.org/clojure.core/partition)
+[partition-by docs](https://clojuredocs.org/clojure.core/partition-by)
 
 ~~~clojure
 #(map first (partition-by identity %))
@@ -39,4 +39,23 @@ It is possible to use a (flatten (map )) function to solve half the problem but 
 
 ~~~clojure
 (fn [x] (flatten (map #(list % %) x)))
+~~~
+
+### [problem 41](https://4clojure.com/problem41)
+
+Write a function which drops every Nth item from a sequence.
+
+[partition docs](https://clojuredocs.org/clojure.core/partition)
+
+~~~clojure
+(fn [coll n] (flatten (partition-all (dec n) n coll)))
+~~~
+
+_Notes_
+
+Partition the collection into (n -1) sized collections stepping over n elements.
+
+~~~clojure
+(partition-all (dec 3) 3 [1 2 3 4 5 6 7 8])
+((1 2) (4 5) (7 8))
 ~~~
