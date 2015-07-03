@@ -1,5 +1,5 @@
 # [4clojure-solutions](http://www.4clojure.com/)
-## some solutions to 4clojure kata
+## some solutions to 4clojure interactive problems
 
 ### [problem 30](https://4clojure.com/problem/30)
 
