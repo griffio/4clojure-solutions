@@ -39,6 +39,32 @@ It is possible to use a (flatten (map )) function to solve half the problem but 
 (fn [x] (flatten (map #(list % %) x)))
 ~~~
 
+### [problem 33](https://4clojure.com/problem/33)
+
+Write a function which replicates each element of a sequence a variable number of times.
+
+[mapcat docs](https://clojuredocs.org/clojure.core/mapcat)
+
+Using iterate
+
+~~~clojure
+(fn [col n] (mapcat #(take n (iterate identity %)) col))
+~~~
+
+_Notes_
+
+mapcat will create the sequence as a single list, where as map will create a new list for each iteration.
+
+~~~clojure
+(([1 2] [1 2]) ([3 4] [3 4]))
+~~~
+
+alternative solution
+
+~~~clojure
+(fn [col n] (mapcat (partial repeat n) col))
+~~~
+
 ### [problem 41](https://4clojure.com/problem41)
 
 Write a function which drops every Nth item from a sequence.
