@@ -43,6 +43,8 @@ It is possible to use a (flatten (map )) function to solve half the problem but 
 
 Write a function which replicates each element of a sequence a variable number of times.
 
+[iterate docs](https://clojuredocs.org/clojure.core/iterate)
+
 [mapcat docs](https://clojuredocs.org/clojure.core/mapcat)
 
 Using iterate
