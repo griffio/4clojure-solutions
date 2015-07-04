@@ -5,7 +5,7 @@
 
 Write a function which returns the first X fibonacci numbers.
 
-Uses a Math formula that runs in constant time and iterated by sequence starting with 1
+Uses a Math formula that runs in constant time and iterated over a sequence starting with 1
 
 ~~~clojure
 (fn [n] (map #(let [sq5 (Math/pow 5 0.5M), rsq5 (/ 1 sq5)]
