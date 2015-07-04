@@ -3,6 +3,8 @@
 
 ### [problem 26](http://www.4clojure.com/problem/26)
 
+[map docs](https://clojuredocs.org/clojure.core/map)
+
 Write a function which returns the first X fibonacci numbers.
 
 Uses a Math formula that runs in constant time and iterated over a sequence starting with 1
