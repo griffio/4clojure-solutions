@@ -18,7 +18,7 @@ Uses a Math formula that runs in constant time and iterated over a sequence star
 
 _Notes_
 
-Idiomatic lazy sequence of all Fibonacci numbers starting with 1.
+Idiomatic lazy sequence of all Fibonacci numbers starting with 1
 
 ~~~clojure
 (fn [n] (take n (map first (iterate (fn [[a b]] [b (+ a b)]) [1 1]))))
