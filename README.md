@@ -1,6 +1,20 @@
 # [4clojure-solutions](http://www.4clojure.com/)
 ## some solutions to 4clojure interactive problems
 
+### [problem 26](http://www.4clojure.com/problem/26)
+
+Write a function which returns the first X fibonacci numbers.
+
+~~~clojure
+
+~~~
+
+_Notes_
+
+~~~clojure
+
+~~~
+
 ### [problem 30](https://4clojure.com/problem/30)
 
 Write a function which removes consecutive duplicates from a sequence.
