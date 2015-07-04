@@ -5,14 +5,21 @@
 
 Write a function which returns the first X fibonacci numbers.
 
-~~~clojure
+Uses a Math formula that runs in constant time and iterated by sequence starting with 1
 
+~~~clojure
+(fn [n] (map #(let [sq5 (Math/pow 5 0.5M), rsq5 (/ 1 sq5)]
+                        (Math/round (* rsq5 (- (Math/pow (/ (+ 1 sq5) 2) %)
+                        (Math/pow (/ (- 1 sq5) 2) %)))))
+                        (take n (iterate inc 1) ) ) ) 
 ~~~
 
 _Notes_
 
-~~~clojure
+Idiomatic lazy sequence of all Fibonacci numbers starting with 1.
 
+~~~clojure
+(fn [n] (take n (map first (iterate (fn [[a b]] [b (+ a b)]) [1 1]))))
 ~~~
 
 ### [problem 30](https://4clojure.com/problem/30)
