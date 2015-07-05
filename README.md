@@ -24,6 +24,29 @@ Idiomatic lazy sequence of all Fibonacci numbers starting with 1
 (fn [n] (take n (map first (iterate (fn [[a b]] [b (+ a b)]) [1 1]))))
 ~~~
 
+### [problem 29](https://4clojure.com/problem/29)
+
+Write a function which takes a string and returns a new string containing only the capital letters.
+
+[apply docs](https://clojuredocs.org/clojure.core/apply)
+
+[apply filter](https://clojuredocs.org/clojure.core/filter)
+
+~~~clojure
+(fn [s] (apply str (filter #(Character/isUpperCase %) s)))
+~~~
+
+_Notes_
+
+The filter creates an output sequence containg only upper-case characters from the collection argument.
+
+An apply passes the sequence to the str function as arguments to create the final string result.
+
+~~~clojure
+ apply str '(\H \L \O \W \R \D)
+ "HLOWRD"
+~~~ 
+
 ### [problem 30](https://4clojure.com/problem/30)
 
 Write a function which removes consecutive duplicates from a sequence.
