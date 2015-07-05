@@ -30,7 +30,7 @@ Write a function which takes a string and returns a new string containing only t
 
 [apply docs](https://clojuredocs.org/clojure.core/apply)
 
-[apply filter](https://clojuredocs.org/clojure.core/filter)
+[filter docs](https://clojuredocs.org/clojure.core/filter)
 
 ~~~clojure
 (fn [s] (apply str (filter #(Character/isUpperCase %) s)))
