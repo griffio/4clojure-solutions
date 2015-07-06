@@ -157,10 +157,15 @@ Write a function which takes a variable number of booleans. Your function should
 [every docs](https://clojuredocs.org/clojure.core/every)
 
 ~~~clojure
-#(= (every? false? %&) (every? true? %&))
+#(= (every? true? %&) (every? false? %&) )
 ~~~~~~
 
 _Notes_
 
-= equality is when both every? is false.  
+= equality is when both every? function returns false  
 
+Alternatively, the arguments equal a set containing true and false
+
+~~~clojure
+#(= (set %&) #{true false})
+~~~
