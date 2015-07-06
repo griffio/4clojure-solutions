@@ -169,3 +169,19 @@ Alternatively, the arguments equal a set containing true and false
 ~~~clojure
 #(= (set %&) #{true false})
 ~~~
+
+### [problem 66](https://4clojure.com/problem/66)
+
+Given two integers, write a function which returns the greatest common divisor.
+
+[recur docs](https://clojuredocs.org/clojure.core/recur)
+
+~~~clojure
+(fn [x y](if (zero? y) x (recur y (mod x y))))
+~~~
+
+_Notes_
+
+Tail call recursion is the only non-stack-consuming looping construct in Clojure.
+
+Euclid's algorithm.
