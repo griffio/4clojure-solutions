@@ -131,3 +131,19 @@ Partition the collection into (n -1) sized collections stepping over n elements.
 (partition-all (dec 3) 3 [1 2 3 4 5 6 7 8])
 ((1 2) (4 5) (7 8))
 ~~~
+
+### [problem 42](https://4clojure.com/problem42)
+
+Write a function which calculates factorials.
+
+[reduce docs](https://clojuredocs.org/clojure.core/reduce)
+
+A factorial calculation (!) is a range of positive integers (n × (n−1)!)
+
+~~~clojure
+(fn[n] (reduce * (range 1 (inc n))))
+~~~
+
+_Notes_
+
+[www.cs.berkeley.edu/~fateman/papers/factorial.pdf](http://www.cs.berkeley.edu/~fateman/papers/factorial.pdf)
