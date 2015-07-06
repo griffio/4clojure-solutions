@@ -136,6 +136,8 @@ Partition the collection into (n -1) sized collections stepping over n elements.
 
 Write a function which calculates factorials.
 
+[range docs]([reduce docs](https://clojuredocs.org/clojure.core/range)
+
 [reduce docs](https://clojuredocs.org/clojure.core/reduce)
 
 A factorial calculation (!) is a range of positive integers (n × (n−1)!)
