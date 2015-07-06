@@ -150,6 +150,23 @@ _Notes_
 
 [www.cs.berkeley.edu/~fateman/papers/factorial.pdf](http://www.cs.berkeley.edu/~fateman/papers/factorial.pdf)
 
+
+### [problem 66](https://4clojure.com/problem/66)
+
+Given two integers, write a function which returns the greatest common divisor.
+
+[recur docs](https://clojuredocs.org/clojure.core/recur)
+
+~~~clojure
+(fn [x y](if (zero? y) x (recur y (mod x y))))
+~~~
+
+_Notes_
+
+Tail call recursion is the only non-stack-consuming looping construct in Clojure.
+
+GCD -> Euclid's algorithm.
+
 ### [problem 83](https://4clojure.com/problem/83)
 
 Write a function which takes a variable number of booleans. Your function should return true if some of the parameters are true, but not all of the parameters are true. Otherwise your function should return false.
@@ -169,19 +186,3 @@ Alternatively, the arguments equal a set containing true and false
 ~~~clojure
 #(= (set %&) #{true false})
 ~~~
-
-### [problem 66](https://4clojure.com/problem/66)
-
-Given two integers, write a function which returns the greatest common divisor.
-
-[recur docs](https://clojuredocs.org/clojure.core/recur)
-
-~~~clojure
-(fn [x y](if (zero? y) x (recur y (mod x y))))
-~~~
-
-_Notes_
-
-Tail call recursion is the only non-stack-consuming looping construct in Clojure.
-
-Euclid's algorithm.
