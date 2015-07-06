@@ -113,7 +113,7 @@ alternative solution
 (fn [col n] (mapcat (partial repeat n) col))
 ~~~
 
-### [problem 41](https://4clojure.com/problem41)
+### [problem 41](https://4clojure.com/problem/41)
 
 Write a function which drops every Nth item from a sequence.
 
@@ -132,7 +132,7 @@ Partition the collection into (n -1) sized collections stepping over n elements.
 ((1 2) (4 5) (7 8))
 ~~~
 
-### [problem 42](https://4clojure.com/problem42)
+### [problem 42](https://4clojure.com/problem/42)
 
 Write a function which calculates factorials.
 
@@ -149,3 +149,18 @@ A factorial calculation (!) is a range of positive integers (n × (n−1)!)
 _Notes_
 
 [www.cs.berkeley.edu/~fateman/papers/factorial.pdf](http://www.cs.berkeley.edu/~fateman/papers/factorial.pdf)
+
+### [problem 83](https://4clojure.com/problem/83)
+
+Write a function which takes a variable number of booleans. Your function should return true if some of the parameters are true, but not all of the parameters are true. Otherwise your function should return false.
+
+[every docs](https://clojuredocs.org/clojure.core/every)
+
+~~~clojure
+#(= (every? false? %&) (every? true? %&))
+~~~~~~
+
+_Notes_
+
+= equality is when both every? is false.  
+
