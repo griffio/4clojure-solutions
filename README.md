@@ -150,6 +150,23 @@ _Notes_
 
 [www.cs.berkeley.edu/~fateman/papers/factorial.pdf](http://www.cs.berkeley.edu/~fateman/papers/factorial.pdf)
 
+### [problem 43](https://4clojure.com/problem/43)
+
+Write a function which reverses the interleave process into x number of subsequences.
+
+[partition docs](https://clojuredocs.org/clojure.core/partition)
+
+~~~clojure
+(apply map vector (partition 2 [1 2 3 4 5 6]))
+~~~
+
+_Notes_
+
+Three Lazy Sequences are partitioned as ([(1 2)] [(3 4)] [(5 6)]) and applied as arguments 1,3,5 followed by 2,4,6. Two vectors are the output.
+
+~~~clojure
+([1 3 5] [2 4 6])
+~~~
 
 ### [problem 66](https://4clojure.com/problem/66)
 
