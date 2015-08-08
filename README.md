@@ -120,16 +120,19 @@ Write a function which drops every Nth item from a sequence.
 [partition-all docs](https://clojuredocs.org/clojure.core/partition-all)
 
 ~~~clojure
-(fn [coll n] (flatten (partition-all (dec n) n coll)))
+(fn [coll n] (apply concat (partition-all (dec n) n coll)))
 ~~~
 
 _Notes_
 
 Partition the collection into (n -1) sized collections stepping over n elements.
 
+Uses apply concat on the partitions to create a single collection.
+
 ~~~clojure
 (partition-all (dec 3) 3 [1 2 3 4 5 6 7 8])
 ((1 2) (4 5) (7 8))
+
 ~~~
 
 ### [problem 42](https://4clojure.com/problem/42)
